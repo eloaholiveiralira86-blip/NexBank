@@ -1,0 +1,122 @@
+/*configuraçao geral*/
+body {
+    font-family: Arial, sans-serif; /* Corrigido: era 'body' */
+    background: #502121;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Topo: Estiliza o cabeçalho azul no Topo */
+.Topo {
+    background: #ca5b4d;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    /*borda arrendondadas estilo app*/
+    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+} 
+
+
+.salto {
+   background:#b84f41;
+   color: rgb(0, 0, 0);
+
+   margin: 20px;
+   padding: 20px;
+   border-radius:10px;
+   justify-content: center;
+   display: flex;
+}
+
+.açoes{
+    display: flex;
+    gap:10px;
+    margin: 20px;
+}
+
+/*RESPONSIVIDADE PARA CELULAR*/
+@media (max-width:600px) {/* defina que as regras serão aplicadas em 
+    ecrã com largura maxima de 600px que é compativel para celulares*/}
+ 
+.container{
+    max-width: 400px;
+    margin: auto;
+    /* seleciona o elemento .container*/
+  } 
+
+  .acoes {/*mudar a direção do flexbox para coluna 
+fazendo os botoes ficarem um por baixo do outro*/
+flex-direction: column;/*empilhado os botões no celular*/
+}
+
+.salto {
+    flex-direction: column;/*empilhada salto de valor*/
+    align-items: flex-start;/*empilhada os botões no celular*/
+    gap: 8px;/*espaço entre as linhas */
+}
+
+.item{
+    flex-direction: column;/*empilha descriçoes e valor*/
+    gap: 4px;/*espaço entre as linhas*/
+}
+button {
+    display: flex;
+    gap: 10px;
+    background: #a54639;
+    color: rgb(3, 3, 3);
+
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button {
+    display: block;/*Faz o botão ocupar a linha toda*/
+    width: 100%; /*Garante que o botao usa toda a largura disponivel*/
+    margin: 10px 0; /*fica um espaço de 10px entre os botoes*/ 
+    padding: 12px; /* altura intena do botao "toque mais facil" */
+    background: #a54639 ;
+    color: rgb(12, 12, 12);
+    border: none; /*remove a borda padrao do sistema*/
+    border-radius: 10px;/* Cantos levemente arredondados*/
+    font-weight: bold;/*texto negrito*/
+    cursor: pointer; /* Muda o mouse para a maozinha ao passar por cima*/
+}
+
+.transaçoes h3{
+    margin-bottom: 10px;
+}
+
+.transaçoes { 
+    margin: 20px;
+   background: #a54639;
+   padding: 20px;
+   border-radius: 10px;
+} 
+
+.item{
+    background: #8d3428;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.card {
+    background: #832f24;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.destaque{
+    background: #7e1717;
+    border: 1px solid #7e1717;
+}
